@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="CSS/style.css" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+		</div>
+		<button data-operation>x^</button>
+    <button data-all-clear class="span-two">AC</button>
+		<button data-delete>DEL</button>
+		<button data-operation>÷</button>
+		<button data-operation>^2</button>
+    <button data-number id="cl1" >1</button>
+    <button data-number id="cl2" >2</button>  
+    <button data-number id="cl3" >3</button>
+		<button data-operation>*</button>
+		<button data-operation>2√</button>
+    <button data-number id="cl4" >4</button>
+    <button data-number id="cl5" >5</button>
+    <button data-number id="cl6" >6</button>
+		<button data-operation>+</button>
+		<button data-operation>^3</button>
+    <button data-number id="cl7" >7</button>
+    <button data-number id="cl8" >8</button>
+    <button data-number id="cl9" >9</button>
+		<button data-operation>-</button>
+		<button data-operation>FAC</button>
+    <button data-number id="cld" >.</button>
+    <button data-number id="cl0" >0</button>
+    <button data-equals class="span-two" >ANS</button>
+  </div>
+
+  <div class="answer-list">
+    <center><h1 style="color:aliceblue;">Past Answers List</h1></center>
+    <div class="output-answers">
+      <ul id="q">
+
+      </ul> </div>
+  </div>
+  
+  <script src="js/app.js"></script>
+</body>
+<script>
+  var maxLength = 10;
+  $("#cl1").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  $("#cl2").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  $("#cl3").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  $("#cl4").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  $("#cl5").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  $("#cl6").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  $("#cl7").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  $("#cl8").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  $("#cl9").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  $("#cl0").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  $("#cld").click(function() {
+    textlen= maxLength - $('.current-operand').text().length;
+    if(parseInt(textlen)<=0)
+    {
+      $('.current-operand').text($('.current-operand').text().substr(0,10));
+    }
+  });
+  </script>
+</html>
